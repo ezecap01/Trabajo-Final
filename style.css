@@ -20,3 +20,71 @@ h1, p {
     color: white;
     text-align: center;
 }
+#RegistroVenta {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 6px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #eee;
+}
+
+.btn {
+    background-color: #ca2020;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.limpiar {
+    background-color: #125aad;
+}
+
+.botones {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.oculto {
+    display: none;
+}

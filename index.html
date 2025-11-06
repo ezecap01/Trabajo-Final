@@ -1,11 +1,69 @@
 <head>
-    <h1> HOLA</h1>
+    <title>UrbanS</title>
     <link rel="stylesheet" href="style.css">
+    <script src="parte.java"></script>
 
 </head>
 <body>
     <h1>Bienvenido a UrbanS</h1>
     <p>Tu tienda de zapatillas urbanas</p>
+
+    <button onclick="mostrarOcultarFormulario()" class="button">
+        Mostrar formulario de ventas
+    </button>
+ <form id="RegistroVenta" action="guardar.php" method="post">
+        <fieldset>
+            <legend>Formulario de Ventas</legend>
+
+            <label for="fecha">Fecha de venta:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <label for="cliente">Nombre del cliente:</label>
+            <input type="text" id="cliente" name="cliente" required>
+
+            <label for="producto">Producto:</label>
+            <select id="producto" name="producto" required onchange="actualizarPrecio()">
+                <option value="">Seleccione un producto</option>
+                <option value="Zapatillas">Zapatillas</option>
+                <option value="Remera">Remera</option>
+                <option value="Pantalón">Pantalón</option>
+            </select>
+
+            <label for="precio">Precio:</label>
+            <input type="text" id="precio" name="precio" readonly>
+
+            <button type="button" id="mostrarLista">Mostrar Lista de Precios</button>
+
+            <div id="tablaPrecios" class="oculto">
+                <table>
+                    <tr><th>Producto</th><th>Precio</th></tr>
+                    <tr><td>Zapatillas</td><td>$125.000</td></tr>
+                    <tr><td>Remera</td><td>$70.000</td></tr>
+                    <tr><td>Pantalón</td><td>$90.000</td></tr>
+                </table>
+                <button type="button" id="cerrarLista">Cerrar Lista</button>
+            </div>
+
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" name="cantidad" required min="1">
+
+            <label for="vendedor">Vendedor:</label>
+            <select id="vendedor" name="vendedor" required>
+                <option value="">Seleccione un vendedor</option>
+                <option value="Ezequiel">Ezequiel</option>
+                <option value="Marta">Marta</option>
+                <option value="Carlos">Carlos</option>
+                <option value="Lucas">Carlos</option>
+            </select>
+
+            <div class="botones">
+                <input type="submit" value="Registrar" class="btn">
+                <input type="reset" value="Limpiar" class="btn limpiar">
+            </div>
+        </fieldset>
+    </form>
+
+    
     
    
 
