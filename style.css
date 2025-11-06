@@ -11,14 +11,23 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
+}
+img{
+    position: absolute;
+    top: 3;
+    left: 5;
+    width: 210px;
+    margin: 0;
+    padding: 0;
+    z-index: 100;
 }
 
-h1, p {
+p {
     font-family: 'hatch';
     background: rgba(0, 0, 0, 0);
     color: white;
     text-align: center;
+    font-size: 100px;
 }
 #RegistroVenta {
     background: white;
